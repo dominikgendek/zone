@@ -1,0 +1,64 @@
+@import "../../../scss/variables";
+@import "../../../scss/mixins";
+
+.tiles {
+    &__wrapper {
+        @include container();
+        h2 {
+            @include subtitle($template-color);
+            margin-bottom: 20px;
+        }
+
+        p {
+            text-align: center;
+        }
+    }
+
+    &__columns {
+        @include flex();
+        margin: 45px -15px 0px;
+        &-col {
+            flex: 0 0 33%; 
+            max-width: 33%;
+            padding: 15px;
+        }
+    }
+
+    &__box {
+        max-width: 332px;
+        &-title {
+            font-size: 20px;
+            line-height: 27px;
+            font-weight: 500;
+            color: #072753;
+            margin-bottom: 19px;
+        }
+        &-img {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50%;
+            width: 85px;
+            height: 85px;
+            margin-bottom: 18px;
+        }
+
+        p{
+            text-align: left;
+            color: #28384E;
+        }
+
+        a{
+            display: inline-block;
+            color: #1B498A;
+            margin-top: 19px;
+            transition: 0.5s;
+            &:hover{
+                margin-left: 5px;
+            }
+            svg{
+                margin-left: 10px;
+            }
+        }
+    }
+}

@@ -1,0 +1,93 @@
+.tiles__wrapper {
+  max-width: 1140px;
+  margin: auto;
+  padding: 0px 15px;
+}
+
+.tiles__wrapper h2 {
+  font-weight: bold;
+  color: #072753;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+@media (min-width: 767px) {
+  .tiles__wrapper h2 {
+    font-size: 40px;
+    line-height: 53px;
+  }
+}
+
+.tiles__wrapper p {
+  text-align: center;
+}
+
+.tiles__columns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 45px -15px 0px;
+}
+
+.tiles__columns-col {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 33%;
+          flex: 0 0 33%;
+  max-width: 33%;
+  padding: 15px;
+}
+
+.tiles__box {
+  max-width: 332px;
+}
+
+.tiles__box-title {
+  font-size: 20px;
+  line-height: 27px;
+  font-weight: 500;
+  color: #072753;
+  margin-bottom: 19px;
+}
+
+.tiles__box-img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 50%;
+  width: 85px;
+  height: 85px;
+  margin-bottom: 18px;
+}
+
+.tiles__box p {
+  text-align: left;
+  color: #28384E;
+}
+
+.tiles__box a {
+  display: inline-block;
+  color: #1B498A;
+  margin-top: 19px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.tiles__box a:hover {
+  margin-left: 5px;
+}
+
+.tiles__box a svg {
+  margin-left: 10px;
+}
+/*# sourceMappingURL=tiles.css.map */

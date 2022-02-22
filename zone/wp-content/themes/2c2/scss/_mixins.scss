@@ -1,0 +1,39 @@
+@mixin subtitle($color){
+    font-weight: bold;
+    color: $color;
+    text-align: center;
+    @media (min-width:767px){
+        font-size: 40px;
+        line-height: 53px;
+    }
+}
+
+@mixin button(){
+    font-size: 17px;
+    font-weight: bold;
+    font-family: 'Roboto';
+    background-color: #ff4363;
+    color: white;
+    padding: 20px; 
+    border-radius: 35px;
+    transition: 0.5s;
+    &:hover{
+        background-color: black !important;
+    }
+    @media(min-width:1000px){
+        font-size: 24px;
+        padding: 20px 40px; 
+    }
+}
+
+@mixin flex{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+@mixin container{
+    max-width: 1140px;
+    margin: auto;
+    padding: 0px 15px;
+}

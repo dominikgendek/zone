@@ -1,0 +1,11 @@
+{
+    "version": 3,
+    "mappings": "AAIK,AAAD,kBAAU,CAAA;EE+BV,SAAS,EAAE,MAAM;EACjB,MAAM,EAAE,IAAI;EACZ,OAAO,EAAE,QAAQ;CF/BhB",
+    "sources": [
+        "partners.scss",
+        "../../../scss/_variables.scss",
+        "../../../scss/_mixins.scss"
+    ],
+    "names": [],
+    "file": "partners.css"
+}

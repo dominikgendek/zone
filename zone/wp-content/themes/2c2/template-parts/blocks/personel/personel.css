@@ -1,0 +1,80 @@
+.personels__wrapper {
+  max-width: 1140px;
+  margin: auto;
+  padding: 0px 15px;
+  position: relative;
+  z-index: 1;
+}
+
+.personels__wrapper:after {
+  content: url("../../../images/dots.png");
+  position: absolute;
+  top: -20px;
+  left: 8px;
+}
+
+@media (min-width: 1300px) {
+  .personels__wrapper:after {
+    top: -20px;
+    left: -35px;
+  }
+}
+
+.personels__columns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.personels__columns-col1 {
+  max-width: 473px;
+}
+
+.personels__columns-col2 {
+  max-width: 635px;
+  padding-left: 30px;
+}
+
+.personels__columns-col2 .name {
+  font-size: 20px;
+  line-height: 27px;
+  font-weight: 500;
+  color: #072753;
+  margin-bottom: 12px;
+}
+
+.personels__columns-col2 .position {
+  font-size: 15px;
+  line-height: 30px;
+  margin-bottom: 30px;
+  color: #072753;
+}
+
+.personels__columns-col2 p {
+  font-size: 17px;
+  color: #072753;
+}
+
+.personels__columns-col2 .slider_nav {
+  margin-top: 30px;
+}
+
+.personels__columns-col2 .slider_nav button {
+  background-color: transparent;
+  border: none;
+}
+
+.personels__columns-col2 .slider_nav button:hover {
+  cursor: pointer;
+}
+/*# sourceMappingURL=personel.css.map */

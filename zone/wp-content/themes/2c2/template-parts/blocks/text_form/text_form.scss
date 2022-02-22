@@ -1,0 +1,67 @@
+@import "../../../scss/variables";
+@import "../../../scss/mixins";
+@import "../../../scss/responsive";
+
+.textForm {
+    position: relative;
+    &__wraper {
+        @include container();
+    }
+
+    &__columns {
+        @include flex();
+        justify-content: space-between;
+        flex-wrap: nowrap;
+        &-col1 {
+            width: 50%;
+            display: flex;
+            align-items: center; 
+            justify-content: flex-start;
+
+            @include rwd(1700) {
+                max-width: 100%;
+                width: auto;
+                display: block;
+            }
+
+            img {
+                width: 90%;
+                @include rwd(1700) {
+                    position: absolute;
+                    left: 65px;
+                    top: 0px;
+                    width: auto;
+                }
+            }
+        }
+
+        &-col2 {
+            width: 50%;
+            padding-top: 74px;
+
+            @include rwd(1700) {
+                max-width: 595px;
+            }
+
+            h2 {
+                @include subtitle($template-color);
+                text-align: left;
+                margin-bottom: 30px;
+            }
+            .your-email input{
+                background-color: transparent;
+            }
+
+            .formulage{
+                margin-top: 65px;
+                background-color: #FAF9F7;
+                padding: 5px;
+                border-radius: 5px;
+            }
+
+            .wpcf7-submit {
+                background-color: #FF9C00 !important;
+            }
+        }
+    }
+}
